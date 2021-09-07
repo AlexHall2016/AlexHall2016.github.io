@@ -1,27 +1,141 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <h1>Alex Hall</h1>
+    <title>Alex Hall</title>
+</head>
+
+<body style="background-color: darkgrey;">
+    <!-- <h1>Alex Hall</h1> -->
+
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Alex Hall</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                        <a class="nav-link" href="#projects">Projects</a>
+                        <!-- <a class="nav-link" href="#experience">Experience</a> -->
+                        <a class="nav-link" href="#contact">Contact Info</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="section header-section" id="Home">
+        <div class="container header-container mt-5 mb-3 p-4">
+            <div class="row d-flex flex-row justify-content-around align-items-center">
+                <div class="col-6">
+                    <img src="images\Rover.gif" alt="This isn't displayed propperly" class="img-fluid"
+                        style="max-width: 500px;max-height:500px">
+                </div>
+                <div class="col-4">
+                    <p class="about-text" style="padding:1rem; border-left:1px solid black;">
+                        Hello, my name is Alexander Hall and I enjoy video game design. I have about 10 years of coding
+                        experience from making small games for 24 hour code days to designing an obstacle course
+                        navigating AI for a
+                        robot.
+                    </p>
+                    <h2><a href="https://github.com/AlexHall2016">My Github</a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col">
+            <h2 id="projects"><u>Projects</u></h3>
+                <div class="container m-3">
+                    <h3><a href="https://github.com/ryanstills/csc615_fa19_group2">Obstacle Course Navigating Robot</a>
+                    </h3>
+                    <img src="images\Rover2.gif" alt="This isn't displayed propperly" class="img-fluid"
+                        style="max-width: 300px;max-height:300px">
+                    <p class="mt-3">A robot programed on a raspberry pi, designed to follow a line and navigate around obstacles using a line sensors, tilt sensors, and infrared sensors.
+                        I designed the logic to follow a path until interupted, wait to see if the interferance moves, and navigate around the obstacle if it does not. Made in 2019
+                    </p>
+                </div>
+                <div class="container m-3">
+                    <h3><a href="https://github.com/jenjenayjen/KittyWars">KittyWarz</a></h3>
+                    <img src="images\KittyWarzStart.png" alt="This isn't displayed propperly" class="img-fluid"
+                        style="max-width: 300px;max-height:300px">
+                    <img src="images\KittyWarz1.png" alt="This isn't displayed propperly" class="img-fluid"
+                        style="max-width: 300px;max-height:300px">
+                    <img src="images\KittyWarz2.png" alt="This isn't displayed propperly" class="img-fluid"
+                        style="max-width: 300px;max-height:300px">
+                    <img src="images\KittyWarz3.png" alt="This isn't displayed propperly" class="img-fluid"
+                        style="max-width: 300px;max-height:300px">
+
+                    <p class="mt-3">My second game, made on a 24 hour Code-Day in a team of 2. A card game against an AI opponent to reach 100 points or reduce your opponent to 0. 
+                        I Programed the bulk of the game logic, as well as the logic for the computer player. Visual were drawn by <a href="https://jenjenayjen.github.io/">my partner</a> Made in 2014. 
+                    </p>
+                </div>
+                <div class="container m-3">
+                    <h3><a href="https://github.com/jenjenayjen/LeftForTheZombies">Left For The Zombies</a></h3>
+                    <img src="images\LFTZ.gif" alt="This isn't displayed propperly" class="img-fluid"
+                        style="max-width: 300px;max-height:300px">
+                        <img src="images\LeftForTheZombiesStart.png" alt="This isn't displayed propperly" class="img-fluid"
+                        style="max-width: 300px;max-height:300px">
+                    <img src="images\LeftForTheZombiesHelicopter.png" alt="This isn't displayed propperly" class="img-fluid"
+                        style="max-width: 300px;max-height:300px">
+                    <img src="images\LeftForTheZombiesPoliceStation.png" alt="This isn't displayed propperly" class="img-fluid"
+                        style="max-width: 300px;max-height:300px">
+                    <!-- <img src="images\LeftForTheZombiesGameOver.png" alt="This isn't displayed propperly" class="img-fluid"
+                        style="max-width: 300px;max-height:300px"> -->
+
+                    <p class="mt-3">My first game, made on a 24 hour Code-Day in a team of 2. A choose your own adventure style game where wrong choices lead to death.  
+                        Visual were drawn by <a href="https://jenjenayjen.github.io/">my partner</a> Made in 2014. 
+                    </p>
+                </div>
+        </div>
+    </div>
+    <!-- <div class="container">
+        <div class="col">
+            <h2 id="experience"><u>Experience</u></h2>
+        </div>
+
+
+
+    </div> -->
+    <div class="container">
+        <div class="col">
+            <h1 id="contact" style="text-align: center;"><u>Contact Info</u></h1>
+            <h2 style="text-align: center;">Email: alexander.hall96@gmail.com</h2>
+            <h2 style="text-align: center;">Phone#: 1 (415) 994 4280</h2>
+        </div>
+
+
+
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
